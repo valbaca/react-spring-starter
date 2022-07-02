@@ -2,7 +2,7 @@
 Basic starting point for a web service: React on frontend with Spring Java on backend.
 
 Built on:
-- Java 11 (until I upgrade my IntelliJ Ultimate beyond 2018.2)
+- Java 17
 - Spring Boot
 - H2 in-memory DB
 - React 18
