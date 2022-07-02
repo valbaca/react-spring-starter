@@ -1,7 +1,7 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 const React = require("react");
 const ReactDOM = require("react-dom");
 const client = require("./client");
-
 
 class App extends React.Component {
     constructor(props) {
@@ -13,7 +13,7 @@ class App extends React.Component {
         client({
             method: 'GET',
             path: '/api/pets',
-        }).done(response => {
+        }).then(response => {
             console.log(response);
             this.setState({
                 pets: response.entity._embedded.pets

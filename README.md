@@ -4,15 +4,19 @@ Basic starting point for a web service: React on frontend with Spring Java on ba
 # Running
 
 ```sh
-# 1. start the backend Spring server
+# Step 1. start the backend Spring server
 ./mvnw spring-boot:run
 
-# 2. (Optional) Install node to node/ within the $PWD
-./mvnw frontend:install-node-and-npm
+# Step 2. 
 
-# 3. Run webpack (to compile JS) with watch
-./node/npm run watch # If you did Step 2
-npm run watch        # If you skipped Step 2 and have npm installed
+#  (Optional A) Install node via maven within the $PWD
+    ./mvnw frontend:install-node-and-npm
+#  (Option B) Use your npm to install
+    npm install
+
+# Step 3. Run webpack
+./node/npm run watch # If you did Step 2 w/ Option A
+npm run watch        # If you did Step 2 w/ Option B
 ```
 
 # Testing
