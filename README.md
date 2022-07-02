@@ -3,8 +3,16 @@ Basic starting point for a web service: React on frontend with Spring Java on ba
 
 # Running
 
-```
+```sh
+# 1. start the backend Spring server
 ./mvnw spring-boot:run
+
+# 2. (Optional) Install node to node/ within the $PWD
+./mvnw frontend:install-node-and-npm
+
+# 3. Run webpack (to compile JS) with watch
+./node/npm run watch # If you did Step 2
+npm run watch        # If you skipped Step 2 and have npm installed
 ```
 
 # Testing
@@ -24,18 +32,20 @@ $ curl -X POST localhost:8080/api/pets -d "{\"name\": \"Clifford\", \"descriptio
 
 ```
 [x] Basic REST CRUD Service
-[ ] Unit tests
-[ ] Basic web page
-[ ] Add React to client-side
-[ ] Unit tests on JS as well
-[ ] Make it not terribly ugly
+[ ] Basic unit tests
+[x] Basic web page
+[ ] CRUD web page
+[x] Add React to client-side
+[ ] Basic unit tests on JS as well
+[ ] Make it not so terribly ugly
 
 Maybe:
-[ ] Postgres as Prod database
+
 [ ] Dockerize?
 [ ] Deploy!
 [ ] Profit?!
 
 TO DONT! Things to avoid to keep this simple:
 [ ] Auth. Crucial to real-world but best avoided if not done properly.
+[ ] A real Database. A real project would use Postgres, MongoDB, or Cassandra.
 ```

@@ -16,6 +16,6 @@ public class DatabaseLoader implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         petRepository.save(new Pet("Annie", "Quirky. Very loud howler. Loves laps."));
-        petRepository.save(new Pet("Rogue", "Mean cat. Do not pet (unless you're Valentin)"));
+        petRepository.save(new Pet("Rogue", "Mean cat. Do not pet!"));
     }
 }
