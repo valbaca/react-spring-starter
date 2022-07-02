@@ -1,22 +1,23 @@
 # react-spring-starter
 Basic starting point for a web service: React on frontend with Spring Java on backend.
 
+Built on:
+- Java 11 (until I upgrade my IntelliJ Ultimate beyond 2018.2)
+- Spring Boot
+- H2 in-memory DB
+- React 18
+
 # Running
 
 ```sh
-# Step 1. start the backend Spring server
-./mvnw spring-boot:run
+# Step 1. Compile Java and start the backend Spring server and Database
+./mvnw install spring-boot:run
 
-# Step 2. 
+# Step 2. "Compile" JavaScript
+npm install or ./mvnw frontend:install-node-and-npm
 
-#  (Optional A) Install node via maven within the $PWD
-    ./mvnw frontend:install-node-and-npm
-#  (Option B) Use your npm to install
-    npm install
-
-# Step 3. Run webpack
-./node/npm run watch # If you did Step 2 w/ Option A
-npm run watch        # If you did Step 2 w/ Option B
+# Step 3. Start webpack 
+npm run watch or ./node/npm run watch
 ```
 
 # Testing
@@ -29,8 +30,12 @@ $ curl -X POST localhost:8080/api/pets -d "{\"name\": \"Clifford\", \"descriptio
 
 # Related
 
-- [Spring Tutorial](https://spring.io/guides/tutorials/react-and-spring-data-rest/) this project is primarily based on.
-- [JHipster](https://www.jhipster.tech/): A full-fledged batteries-included opinionated way to build Java+JS web services.
+- [Spring Tutorial](https://spring.io/guides/tutorials/react-and-spring-data-rest/) this project is primarily based on this tutorial.
+    - [Github](https://github.com/spring-guides/tut-react-and-spring-data-rest)
+- [Okta Tutorial ](https://developer.okta.com/blog/2022/06/17/simple-crud-react-and-spring-boot) this project also pulled heavily from this tutorial.
+    - [Github]()
+- [eirslett/frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin) A plugin that blends NPM into Maven.
+- [JHipster](https://www.jhipster.tech/): A full-fledged, batteries-included, opinionated way to build Java+JS web services.
 
 # TODO
 

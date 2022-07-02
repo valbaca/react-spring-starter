@@ -1,7 +1,8 @@
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import client from './client';
 import 'bootstrap/dist/css/bootstrap.min.css';
-const React = require("react");
-const ReactDOM = require("react-dom");
-const client = require("./client");
+
 
 class App extends React.Component {
     constructor(props) {
@@ -14,7 +15,6 @@ class App extends React.Component {
             method: 'GET',
             path: '/api/pets',
         }).then(response => {
-            console.log(response);
             this.setState({
                 pets: response.entity._embedded.pets
             });
@@ -58,7 +58,6 @@ class Pet extends React.Component {
     }
 }
 
-ReactDOM.render(
-    <App/>,
-    document.getElementById("react")
-);
+const container = document.getElementById('app');
+const root = createRoot(container);
+root.render(<App />);
