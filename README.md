@@ -41,11 +41,11 @@ $ curl -X POST localhost:8080/api/pets -d "{\"name\": \"Clifford\", \"descriptio
 
 ```
 [x] Basic REST CRUD Service
-[ ] Basic unit tests
+[x] Basic unit tests (Java)
 [x] Basic web page
 [ ] CRUD web page
 [x] Add React to client-side
-[ ] Basic unit tests on JS as well
+[ ] Basic unit tests (JS)
 [ ] Make it not so terribly ugly
 
 Maybe:
