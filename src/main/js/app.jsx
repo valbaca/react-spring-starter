@@ -3,6 +3,7 @@ import {createRoot} from 'react-dom/client';
 import client from './api/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PetList from "./components/petList.jsx";
+import './app.css';
 
 class App extends React.Component {
     constructor(props) {

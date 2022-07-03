@@ -32,7 +32,7 @@ $ curl -X POST localhost:8080/api/pets -d "{\"name\": \"Clifford\", \"descriptio
 
 - [Spring Tutorial](https://spring.io/guides/tutorials/react-and-spring-data-rest/) this project is primarily based on this tutorial.
     - [Github](https://github.com/spring-guides/tut-react-and-spring-data-rest)
-- [Okta Tutorial ](https://developer.okta.com/blog/2022/06/17/simple-crud-react-and-spring-boot) this project also pulled heavily from this tutorial.
+- [Okta Tutorial](https://developer.okta.com/blog/2022/06/17/simple-crud-react-and-spring-boot) this project also pulled heavily from this tutorial.
     - [Github]()
 - [eirslett/frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin) A plugin that blends NPM into Maven.
 - [JHipster](https://www.jhipster.tech/): A full-fledged, batteries-included, opinionated way to build Java+JS web services.
@@ -45,8 +45,8 @@ $ curl -X POST localhost:8080/api/pets -d "{\"name\": \"Clifford\", \"descriptio
 [x] Basic web page
 [ ] CRUD web page
 [x] Add React to client-side
-[ ] Basic unit tests (JS)
-[ ] Make it not so terribly ugly
+[x] Basic unit tests (JS)
+[x] Make it not so terribly ugly
 
 Maybe:
 
