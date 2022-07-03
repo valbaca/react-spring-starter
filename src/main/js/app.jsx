@@ -11,17 +11,22 @@ class App extends React.Component {
     }
 
     componentDidMount() {
+        this.fetchPets()
+    }
+
+    render() {
+        return (<PetList pets={this.state.pets} onPetsChange={this.fetchPets}/>);
+    }
+
+    fetchPets = () =>  {
         fetch('api/pets')
             .then(response => response.json())
             .then(data => {
+                console.dir(data)
                 this.setState({
                     pets: data._embedded.pets
                 });
             });
-    }
-
-    render() {
-        return (<PetList pets={this.state.pets}/>);
     }
 }
 
